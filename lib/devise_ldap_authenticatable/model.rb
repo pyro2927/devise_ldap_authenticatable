@@ -6,8 +6,7 @@ module Devise
     #
     # Examples:
     #
-    #    User.authenticate('email@test.com', 'password123')  # returns authenticated user or nil
-    #    User.find(1).valid_password?('password123')         # returns true/false
+    #    User.find(1).valid_ldap_authentication?('password123')         # returns true/false
     #
     module LdapAuthenticatable
       extend ActiveSupport::Concern
